@@ -1,4 +1,3 @@
-
 import onnx
 import os
 import torch
@@ -54,7 +53,7 @@ print(dataset, "\n")
 # Show label names
 print("classes:\n", dataset.classes, "\n")
 
-# Split dataset into train and test (5:1)
+# Split dataset into train and test (8:2) 划分数据集
 train_dataset, test_dataset = torch.utils.data.random_split(
     dataset, [int(len(dataset) * 0.8), len(dataset) - int(len(dataset) * 0.8)])
 

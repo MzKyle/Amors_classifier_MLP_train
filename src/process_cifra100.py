@@ -1,5 +1,3 @@
-# Copyright (c) 2023 ChenJun
-
 import pickle
 import cv2
 

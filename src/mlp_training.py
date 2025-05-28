@@ -96,6 +96,6 @@ for epoch in range(5):
             correct += (predicted == y).sum().item()
         print(f'Epoch: {epoch}, Accuracy: {100 * correct / total}%')
 
-    # Save model on each epoch
+    # Save model on each epoch 后来的会覆盖之前的，最终只留下最后一次的
     save_model(model)
     print("\n")

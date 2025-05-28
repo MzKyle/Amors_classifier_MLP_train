@@ -13,7 +13,7 @@ def processImage(img):
     img = img.transpose(1, 2, 0)
     # Resize to 20x28
     img = cv2.resize(img, (20, 28))
-    # Do OTSU
+    # Do OTSU 自动计算阈值
     img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     _, img = cv2.threshold(img, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
     return img
